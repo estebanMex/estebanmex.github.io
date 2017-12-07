@@ -1,14 +1,18 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <style type="text/css">
-  /*
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="generator" content="pandoc" />
+    <title></title>
+    <style type="text/css">
+        code {
+            white-space: pre;
+        }
+    </style>
+    <style type="text/css">
+        /*
    * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
    *
    * CSS for making a resume with pandoc. Inspired by moderncv.
@@ -16,37 +20,43 @@
    * This CSS document is delivered to you under the CC BY-SA 3.0 License.
    * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
    */
-  
-  /* Whole document */
-  body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      width: 1024px;
-      margin: auto;
-      background: #FFFFFF;
-      padding: 10px 10px 10px 10px;
-  }
-  
-  /* Title of the resume */
-  h1 {
-      font-size: 55px;
-      color: #757575;
-      text-align:center;
-      margin-bottom:15px;
-  }
-  h1:hover {
-      background-color: #757575;
-      color: #FFFFFF;
-      text-shadow: 1px 1px 1px #333;
-  }
-  
-  /* Titles of categories */
-  h2 {
-      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
-      color: #00c6ff;
-      text-align: center;
-  }
-  /* There is a bar just before each category */
-  /*h2:before {
+
+        /* Whole document */
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            width: 1024px;
+            margin: auto;
+            background: #FFFFFF;
+            padding: 10px 10px 10px 10px;
+        }
+
+        /* Title of the resume */
+
+        h1 {
+            font-size: 55px;
+            color: #757575;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        h1:hover {
+            background-color: #757575;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 1px #333;
+        }
+
+        /* Titles of categories */
+
+        h2 {
+            /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+            color: #00c6ff;
+            text-align: center;
+        }
+
+        /* There is a bar just before each category */
+
+        /*h2:before {
       content: "";
       display: inline-block;
       margin-right:1%;
@@ -54,378 +64,525 @@
       height: 10px;
       background-color: #9CB770;
   }*/
-  /* This is called "rulecolor" in the ConTeXt stylesheet. */
-  
-  h2 {
-      background-color: #00c6ff;
-      color: #FFFFFF;
-      text-shadow: 1px 1px 1px #333;
-  }
-  /*
+
+        /* This is called "rulecolor" in the ConTeXt stylesheet. */
+
+        h2 {
+            background-color: #00c6ff;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 1px #333;
+        }
+
+        /*
   h2:hover {
       background-color: #00c6ff;
       color: #FFFFFF;
       text-shadow: 1px 1px 1px #333;
   }
   */
-  /* Definitions */
-  dt {
-      text-align: center;
-      padding: 10px;
-  }
-  dd {
-      margin: 0;
-  }
-  p {
-      margin-top:0;
-      margin-bottom:7px;
-  }
-  
-  /* Blockquotes */
-  blockquote {
-      text-align: center
-  }
-  
-  /* Links */
-  a {
-      text-decoration: none;
-      color: #00c6ff;
-  }
-  a:hover, a:active {
-      background-color: #00c6ff;
-      color: #FFFFFF;
-      text-decoration: none;
-      text-shadow: 1px 1px 1px #333;
-  }
-  
-  /* Horizontal separators */
-  hr {
-      color: #A6A6A6;
-  }
-  
-  table {
-      width: 100%;
-      margin-top: 1.5em;
-  }
-  
-  tr> td:last-child {
-      width: 40%;
-  }
-  
-  </style>
+
+        /* Definitions */
+
+        dt {
+            text-align: center;
+            padding: 10px;
+        }
+
+        dd {
+            margin: 0;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 7px;
+        }
+
+        /* Blockquotes */
+
+        blockquote {
+            text-align: center
+        }
+
+        /* Links */
+
+        a {
+            text-decoration: none;
+            color: #00c6ff;
+        }
+
+        a:hover,
+        a:active {
+            background-color: #00c6ff;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px #333;
+        }
+
+        /* Horizontal separators */
+
+        hr {
+            color: #A6A6A6;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 1.5em;
+        }
+
+        tr>td:last-child {
+            width: 40%;
+        }
+    </style>
 </head>
+
 <body>
-<h1 id="esteban-rios">Esteban RIOS</h1>
-<blockquote>
-<p><script type="text/javascript">
-<!--
-h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x65;&#x73;&#116;&#x65;&#98;&#x61;&#110;&#50;&#x77;&#x65;&#98;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+    <h1 id="esteban-rios">Esteban RIOS</h1>
+    <blockquote>
+        <p>
+            <script type="text/javascript">
+< !--
+                    h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;'; a = '&#64;'; n = '&#x65;&#x73;&#116;&#x65;&#98;&#x61;&#110;&#50;&#x77;&#x65;&#98;'; e = n + a + h;
+                document.write('<a h' + 'ref' + '="ma' + 'ilto' + ':' + e + '" clas' + 's="em' + 'ail">' + e + '<\/' + 'a' + '>');
 // -->
-</script><noscript>&#x65;&#x73;&#116;&#x65;&#98;&#x61;&#110;&#50;&#x77;&#x65;&#98;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript> • 06 67 12 71 89</p>
-</blockquote>
-<h2 id="concepteur-dévelopeur-informatique">Concepteur dévelopeur Informatique</h2>
-<ul>
-<li>6 années d'expériences</li>
-<li>Création de sites web, développement de formats publicitaires, webmastering.</li>
-<li>Connaissances sectorielles (e-commerce, publicité, luxe)</li>
-<li>Principales compétences techniques: développement JAVASCRIPT, intégration HTML&amp;CSS, développement PHP &amp; MySQL.</li>
-</ul>
-<h2 id="formations">Formations</h2>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Concepteur développeur Informatique</strong></td>
-<td align="left"><strong>Intégrateur des données multimédia</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Niveau II (bac +4)</td>
-<td align="left">Niveau III (bac +2)</td>
-</tr>
-<tr class="odd">
-<td align="left">2013-2014</td>
-<td align="left">2008-2010</td>
-</tr>
-<tr class="even">
-<td align="left">M2I Formations Paris</td>
-<td align="left">CFA COM Bagnolet</td>
-</tr>
-</tbody>
-</table>
-<h2 id="parcours-professionnel">Parcours professionnel</h2>
-<dl>
-<dt><strong>Accorhotels.com</strong></dt>
-<dd><p><strong>Projet:</strong> Maintenance et Évolutions accorhotels.com et sites marques</p>
-<p><strong>Poste:</strong> Développeur Front-end <small>(consultant Viseo technologies)</small></p>
-<p><strong>Période:</strong> de septembre 2016 à septembre 2017</p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Missions</strong></td>
-<td align="left"><strong>Environnement technique</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Correction des tickets vie courante sites du groupe</td>
-<td align="left">Javascript</td>
-</tr>
-<tr class="odd">
-<td align="left">Développement JavaScript</td>
-<td align="left">gulpJS + browserify</td>
-</tr>
-<tr class="even">
-<td align="left">Intégration HTML &amp; LESS</td>
-<td align="left">jquery (factory JqueryUI créations des plugins)</td>
-</tr>
-<tr class="odd">
-<td align="left">Intégration des nouvelles pages</td>
-<td align="left">html</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">git</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">less</td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-<hr />
-<dl>
-<dt><strong>PSA Groupe</strong></dt>
-<dd><p><strong>Projet:</strong> Configurateur de véhicules Peugeot</p>
-<p><strong>Poste:</strong> Développeur Front-end <small>(consultant Viseo technologies)</small></p>
-<p><strong>Période:</strong> mars 2016 - septembre 2016 (7 mois)</p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Missions</strong></td>
-<td align="left"><strong>Environnement technique</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Développement Javascript</td>
-<td align="left">Javascript</td>
-</tr>
-<tr class="odd">
-<td align="left">Intégration HTML &amp; SASS</td>
-<td align="left">BackboneJS + MarionetteJS</td>
-</tr>
-<tr class="even">
-<td align="left">Intégration des nouvelles pages</td>
-<td align="left">requireJS</td>
-</tr>
-<tr class="odd">
-<td align="left">Développement POC CONFISHOW</td>
-<td align="left">html</td>
-</tr>
-<tr class="even">
-<td align="left">(Fusion du projet configurateur avec le site Peugeot)</td>
-<td align="left">jquery (création des plugins)</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">git</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">sass</td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-<hr />
-<dl>
-<dt><strong>HimediaGroup.com</strong></dt>
-<dd><p><strong>Projet:</strong> Universal Tagging</p>
-<p><strong>Poste:</strong> Développeur Front-end</p>
-<p><strong>Période:</strong> septembre 2014 - janvier 2016 (16 mois)</p>
-<h4 id="missions">Missions:</h4>
-<ul>
-<li>Développement et intégration des tags marketing</li>
-<li>Développement des templates publicitaires compatibles Appnexus, SmartServer</li>
-<li>Développement et support du projet Universal Tagging (gestionnaire des tags marketing)</li>
-<li>Mise à jour et support extension chrome utilisé pour débugger les templates</li>
-</ul>
-<h4 id="environnement-technique">Environnement technique:</h4>
-<ul>
-<li>Javascript</li>
-<li>lodash</li>
-<li>gruntJS</li>
-<li>backboneJS</li>
-<li>angularJS</li>
-<li>html</li>
-<li>css</li>
-<li>git</li>
-</ul>
-</dd>
-</dl>
-<hr />
-<dl>
-<dt><strong>LaFranceAgricole.fr</strong></dt>
-<dd><p><strong>Projet:</strong> Gestion des sites du groupe</p>
-<p><strong>Poste:</strong> Développeur PHP (Webmaster)</p>
-<p><strong>Période:</strong> mai 2014 - août 2014 (4 mois)</p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Missions</strong></td>
-<td align="left"><strong>Environnement technique</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Mise à jour des sites du groupe La France Agricole</td>
-<td align="left">php5 (framework MVC propriétaire)</td>
-</tr>
-<tr class="odd">
-<td align="left">Intégration d'interfaces (twitter bootstrap)</td>
-<td align="left">MySQL</td>
-</tr>
-<tr class="even">
-<td align="left">Intégration des nouvelles pages</td>
-<td align="left">Javascript (jQuery)</td>
-</tr>
-<tr class="odd">
-<td align="left">Développement et corrections des fonctionnalités</td>
-<td align="left">html</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">css</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">git</td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-<hr />
-<dl>
-<dt><strong>Testapic.com</strong></dt>
-<dd><p><strong>Projet:</strong> Application Testapic, backoffice et interface de tests</p>
-<p><strong>Poste:</strong> Développeur PHP</p>
-<p><strong>Période:</strong> février- 2014 à mai- 2014 (3 mois)</p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Missions</strong></td>
-<td align="left"><strong>Environnement technique</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Développement et corrections des fonctionnalités du BO</td>
-<td align="left">PHP (zend Framework2)</td>
-</tr>
-<tr class="odd">
-<td align="left">Intégration d'interfaces (twitter bootstrap)</td>
-<td align="left">MySQL</td>
-</tr>
-<tr class="even">
-<td align="left">Gestion des sites support</td>
-<td align="left">Javascript (jQuery)</td>
-</tr>
-<tr class="odd">
-<td align="left">Enrichissement documentation technique</td>
-<td align="left">html</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">css</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">git</td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-<hr />
-<dl>
-<dt><strong>Priceminister.com</strong></dt>
-<dd><p><strong>Projet:</strong> Support pro, personnalisation (js, html &amp; css)</p>
-<p><strong>Poste:</strong> Responsable support personnalisation des super boutiques</p>
-<p><strong>Période:</strong> septembre- 2010 à mai- 2014 (4 ans)</p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Missions</strong></td>
-<td align="left"><strong>Environnement technique</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Support HTML &amp; CSS aux marchands PRO</td>
-<td align="left">html &amp; css</td>
-</tr>
-<tr class="odd">
-<td align="left">Intégration d'un thème wordpress personnalisé Priceminister</td>
-<td align="left">javascript</td>
-</tr>
-<tr class="even">
-<td align="left">Gestion des sites support</td>
-<td align="left">php5, MySQL</td>
-</tr>
-<tr class="odd">
-<td align="left">Enrichissement documentation technique</td>
-<td align="left">wordpress</td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-<hr />
-<dl>
-<dt><strong>Agence Kikaya</strong></dt>
-<dd><p><strong>Projet:</strong> Intégration maquettes html &amp; css</p>
-<p><strong>Poste:</strong> Intégrateur HTML &amp; CSS</p>
-<p><strong>Période:</strong> septembre- 2008 à juillet- 2010 (2 ans)</p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Missions</strong></td>
-<td align="left"><strong>Environnement technique</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Intégration des maquettes HTML&amp; CSS à partir des maquettes PSD</td>
-<td align="left">html &amp; css</td>
-</tr>
-<tr class="odd">
-<td align="left">Intégration des e-mailings</td>
-<td align="left">javascript</td>
-</tr>
-<tr class="even">
-<td align="left">webmastering site institutionnel</td>
-<td align="left">php5, MySQL</td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-<h2 id="informations-complémentaires">Informations complémentaires</h2>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Langues</strong></td>
-<td align="left"><strong>Centres d'intérêt</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Français (bilingue)</td>
-<td align="left">Développement web</td>
-</tr>
-<tr class="odd">
-<td align="left">Espagnol (langue maternelle)</td>
-<td align="left">Cuisine</td>
-</tr>
-<tr class="even">
-<td align="left">Anglais (compréhension écrite)</td>
-<td align="left">Bricolage</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Rubik's cube</td>
-</tr>
-</tbody>
-</table>
+            </script>
+            <noscript>&#x65;&#x73;&#116;&#x65;&#98;&#x61;&#110;&#50;&#x77;&#x65;&#98;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript>
+            • 06 67 12 71 89</p>
+    </blockquote>
+    <h2 id="concepteur-dévelopeur-informatique">Concepteur dévelopeur Informatique</h2>
+    <ul>
+        <li>6 années d'expériences</li>
+        <li>Création de sites web, développement de formats publicitaires, webmastering.</li>
+        <li>Connaissances sectorielles (e-commerce, publicité, luxe)</li>
+        <li>Principales compétences techniques: développement JAVASCRIPT, intégration HTML&amp;CSS, développement PHP &amp; MySQL.</li>
+    </ul>
+    <h2 id="formations">Formations</h2>
+    <table>
+        <tbody>
+            <tr class="odd">
+                <td align="left">
+                    <strong>Concepteur développeur Informatique</strong>
+                </td>
+                <td align="left">
+                    <strong>Intégrateur des données multimédia</strong>
+                </td>
+            </tr>
+            <tr class="even">
+                <td align="left">Niveau II (bac +4)</td>
+                <td align="left">Niveau III (bac +2)</td>
+            </tr>
+            <tr class="odd">
+                <td align="left">2013-2014</td>
+                <td align="left">2008-2010</td>
+            </tr>
+            <tr class="even">
+                <td align="left">M2I Formations Paris</td>
+                <td align="left">CFA COM Bagnolet</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="parcours-professionnel">Parcours professionnel</h2>
+    <dl>
+        <dt>
+            <strong>Lacoste.com</strong>
+        </dt>
+        <dd>
+            <p>
+                <strong>Projet:</strong>Developpement pages poloshop</p>
+            <p>
+                <strong>Poste:</strong> Développeur Front-end
+                <small>(consultant Viseo technologies)</small>
+            </p>
+            <p>
+                <strong>Période:</strong> de novembre 2017 à ce jour</p>
+            <table>
+                <tbody>
+                    <tr class="odd">
+                        <td align="left">
+                            <strong>Missions</strong>
+                        </td>
+                        <td align="left">
+                            <strong>Environnement technique</strong>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Correction des tickets vie courante sites du groupe</td>
+                        <td align="left">Javascript</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Développement JavaScript</td>
+                        <td align="left">gulpJS</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Intégration HTML &amp; SASS</td>
+                        <td align="left">ReactJS</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Intégration des nouvelles pages</td>
+                        <td align="left">html</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left"></td>
+                        <td align="left">git</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left"></td>
+                        <td align="left">sass</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+    
+    <hr />
+    <dl>
+        <dt>
+            <strong>Accorhotels.com</strong>
+        </dt>
+        <dd>
+            <p>
+                <strong>Projet:</strong> Maintenance et Évolutions accorhotels.com et sites marques</p>
+            <p>
+                <strong>Poste:</strong> Développeur Front-end
+                <small>(consultant Viseo technologies)</small>
+            </p>
+            <p>
+                <strong>Période:</strong> de septembre 2016 à septembre 2017</p>
+            <table>
+                <tbody>
+                    <tr class="odd">
+                        <td align="left">
+                            <strong>Missions</strong>
+                        </td>
+                        <td align="left">
+                            <strong>Environnement technique</strong>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Correction des tickets vie courante sites du groupe</td>
+                        <td align="left">Javascript</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Développement JavaScript</td>
+                        <td align="left">gulpJS + browserify</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Intégration HTML &amp; LESS</td>
+                        <td align="left">jquery (factory JqueryUI créations des plugins)</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Intégration des nouvelles pages</td>
+                        <td align="left">html</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left"></td>
+                        <td align="left">git</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left"></td>
+                        <td align="left">less</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+
+    <hr />
+    <dl>
+        <dt>
+            <strong>PSA Groupe</strong>
+        </dt>
+        <dd>
+            <p>
+                <strong>Projet:</strong> Configurateur de véhicules Peugeot</p>
+            <p>
+                <strong>Poste:</strong> Développeur Front-end
+                <small>(consultant Viseo technologies)</small>
+            </p>
+            <p>
+                <strong>Période:</strong> mars 2016 - septembre 2016 (7 mois)</p>
+            <table>
+                <tbody>
+                    <tr class="odd">
+                        <td align="left">
+                            <strong>Missions</strong>
+                        </td>
+                        <td align="left">
+                            <strong>Environnement technique</strong>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Développement Javascript</td>
+                        <td align="left">Javascript</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Intégration HTML &amp; SASS</td>
+                        <td align="left">BackboneJS + MarionetteJS</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Intégration des nouvelles pages</td>
+                        <td align="left">requireJS</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Développement POC CONFISHOW</td>
+                        <td align="left">html</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">(Fusion du projet configurateur avec le site Peugeot)</td>
+                        <td align="left">jquery (création des plugins)</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left"></td>
+                        <td align="left">git</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left"></td>
+                        <td align="left">sass</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+    <hr />
+    <dl>
+        <dt>
+            <strong>HimediaGroup.com</strong>
+        </dt>
+        <dd>
+            <p>
+                <strong>Projet:</strong> Universal Tagging</p>
+            <p>
+                <strong>Poste:</strong> Développeur Front-end</p>
+            <p>
+                <strong>Période:</strong> septembre 2014 - janvier 2016 (16 mois)</p>
+            <h4 id="missions">Missions:</h4>
+            <ul>
+                <li>Développement et intégration des tags marketing</li>
+                <li>Développement des templates publicitaires compatibles Appnexus, SmartServer</li>
+                <li>Développement et support du projet Universal Tagging (gestionnaire des tags marketing)</li>
+                <li>Mise à jour et support extension chrome utilisé pour débugger les templates</li>
+            </ul>
+            <h4 id="environnement-technique">Environnement technique:</h4>
+            <ul>
+                <li>Javascript</li>
+                <li>lodash</li>
+                <li>gruntJS</li>
+                <li>backboneJS</li>
+                <li>angularJS</li>
+                <li>html</li>
+                <li>css</li>
+                <li>git</li>
+            </ul>
+        </dd>
+    </dl>
+    <hr />
+    <dl>
+        <dt>
+            <strong>LaFranceAgricole.fr</strong>
+        </dt>
+        <dd>
+            <p>
+                <strong>Projet:</strong> Gestion des sites du groupe</p>
+            <p>
+                <strong>Poste:</strong> Développeur PHP (Webmaster)</p>
+            <p>
+                <strong>Période:</strong> mai 2014 - août 2014 (4 mois)</p>
+            <table>
+                <tbody>
+                    <tr class="odd">
+                        <td align="left">
+                            <strong>Missions</strong>
+                        </td>
+                        <td align="left">
+                            <strong>Environnement technique</strong>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Mise à jour des sites du groupe La France Agricole</td>
+                        <td align="left">php5 (framework MVC propriétaire)</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Intégration d'interfaces (twitter bootstrap)</td>
+                        <td align="left">MySQL</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Intégration des nouvelles pages</td>
+                        <td align="left">Javascript (jQuery)</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Développement et corrections des fonctionnalités</td>
+                        <td align="left">html</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left"></td>
+                        <td align="left">css</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left"></td>
+                        <td align="left">git</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+    <hr />
+    <dl>
+        <dt>
+            <strong>Testapic.com</strong>
+        </dt>
+        <dd>
+            <p>
+                <strong>Projet:</strong> Application Testapic, backoffice et interface de tests</p>
+            <p>
+                <strong>Poste:</strong> Développeur PHP</p>
+            <p>
+                <strong>Période:</strong> février- 2014 à mai- 2014 (3 mois)</p>
+            <table>
+                <tbody>
+                    <tr class="odd">
+                        <td align="left">
+                            <strong>Missions</strong>
+                        </td>
+                        <td align="left">
+                            <strong>Environnement technique</strong>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Développement et corrections des fonctionnalités du BO</td>
+                        <td align="left">PHP (zend Framework2)</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Intégration d'interfaces (twitter bootstrap)</td>
+                        <td align="left">MySQL</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Gestion des sites support</td>
+                        <td align="left">Javascript (jQuery)</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Enrichissement documentation technique</td>
+                        <td align="left">html</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left"></td>
+                        <td align="left">css</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left"></td>
+                        <td align="left">git</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+    <hr />
+    <dl>
+        <dt>
+            <strong>Priceminister.com</strong>
+        </dt>
+        <dd>
+            <p>
+                <strong>Projet:</strong> Support pro, personnalisation (js, html &amp; css)</p>
+            <p>
+                <strong>Poste:</strong> Responsable support personnalisation des super boutiques</p>
+            <p>
+                <strong>Période:</strong> septembre- 2010 à mai- 2014 (4 ans)</p>
+            <table>
+                <tbody>
+                    <tr class="odd">
+                        <td align="left">
+                            <strong>Missions</strong>
+                        </td>
+                        <td align="left">
+                            <strong>Environnement technique</strong>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Support HTML &amp; CSS aux marchands PRO</td>
+                        <td align="left">html &amp; css</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Intégration d'un thème wordpress personnalisé Priceminister</td>
+                        <td align="left">javascript</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Gestion des sites support</td>
+                        <td align="left">php5, MySQL</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Enrichissement documentation technique</td>
+                        <td align="left">wordpress</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+    <hr />
+    <dl>
+        <dt>
+            <strong>Agence Kikaya</strong>
+        </dt>
+        <dd>
+            <p>
+                <strong>Projet:</strong> Intégration maquettes html &amp; css</p>
+            <p>
+                <strong>Poste:</strong> Intégrateur HTML &amp; CSS</p>
+            <p>
+                <strong>Période:</strong> septembre- 2008 à juillet- 2010 (2 ans)</p>
+            <table>
+                <tbody>
+                    <tr class="odd">
+                        <td align="left">
+                            <strong>Missions</strong>
+                        </td>
+                        <td align="left">
+                            <strong>Environnement technique</strong>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">Intégration des maquettes HTML&amp; CSS à partir des maquettes PSD</td>
+                        <td align="left">html &amp; css</td>
+                    </tr>
+                    <tr class="odd">
+                        <td align="left">Intégration des e-mailings</td>
+                        <td align="left">javascript</td>
+                    </tr>
+                    <tr class="even">
+                        <td align="left">webmastering site institutionnel</td>
+                        <td align="left">php5, MySQL</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+    <h2 id="informations-complémentaires">Informations complémentaires</h2>
+    <table>
+        <tbody>
+            <tr class="odd">
+                <td align="left">
+                    <strong>Langues</strong>
+                </td>
+                <td align="left">
+                    <strong>Centres d'intérêt</strong>
+                </td>
+            </tr>
+            <tr class="even">
+                <td align="left">Français (bilingue)</td>
+                <td align="left">Développement web</td>
+            </tr>
+            <tr class="odd">
+                <td align="left">Espagnol (langue maternelle)</td>
+                <td align="left">Cuisine</td>
+            </tr>
+            <tr class="even">
+                <td align="left">Anglais (compréhension écrite)</td>
+                <td align="left">Bricolage</td>
+            </tr>
+            <tr class="odd">
+                <td align="left"></td>
+                <td align="left">Rubik's cube</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>
